@@ -1,0 +1,22 @@
+Inicio
+
+Definir función suma_diagonales(Matriz M, Entero N):
+    Inicializar suma como 0
+    Para i desde 0 hasta N-1 hacer:
+        suma = suma + M[i][i]               // Sumar diagonal principal
+        suma = suma + M[i][N - 1 - i]       // Sumar diagonal secundaria
+    Fin Para
+Fin función
+
+Definir función main():
+    Inicializar matriz M1 de tamaño 3x3
+    Inicializar matriz M2 de tamaño 4x4
+    Inicializar matriz M3 de tamaño 2x2
+    
+    Imprimir "Suma de diagonales para matriz 3x3: ", suma_diagonales(M1, 3)
+    Imprimir "Suma de diagonales para matriz 4x4: ", suma_diagonales(M2, 4)
+    Imprimir "Suma de diagonales para matriz 2x2: ", suma_diagonales(M3, 2)
+Fin función
+
+Fin
+
