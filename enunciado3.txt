@@ -1,0 +1,32 @@
+Definir una constante SIZE que representa el tamaño de la matriz cuadrada.
+SIZE=5 (En este caso)
+Función findLargestLine(matrix):
+    Inicializar largo_max a 0 (para guardar el valor máximo de la secuencia)
+    Inicializar largo a 0 (para contar la secuencia actual)
+    Para cada fila i desde 0 hasta SIZE - 1:
+      Para cada columna j desde 0 hasta SIZE - 1:
+       Si matrix[i][j] es igual a 1:
+         Incrementar largo en 1
+         Si largo es mayor que largo_max entonces:
+          largo_max = largo (actualizar el valor máximo)
+           Si matrix[i][j] es igual a 0:
+              Reiniciar largo a 0
+ Retornar largo_max (la longitud mas larga)
+Segunda parte
+Función aleatoriamente(matrix):
+ Inicializar el generador de números aleatorios usando la función srand con time(NULL)
+  Para cada fila i desde 0 hasta SIZE - 1:
+    Para cada columna j desde 0 hasta SIZE - 1:
+     Asignar a matrix[i][j] un valor aleatorio (0 o 1) utilizando la función rand() % 2
+
+Tercera parte 
+Función main:
+    Definir una matriz binaria llamada matriz de tamaño SIZE x SIZE
+    Llamar a la función aleatoriamente(matrix) para llenar la matriz con valores aleatorios (0 o 1)
+    Imprimir la matriz generada
+    Llamar a la función findLargestLine(matrix) para encontrar la longitud de la secuencia más larga de 1s consecutivos
+    Almacenar el resultado en la variable
+    Imprimir "La longitud de la secuencia más larga de 1s es: " seguido del valor de secuencia_maslarga
+    Fin
+
+
